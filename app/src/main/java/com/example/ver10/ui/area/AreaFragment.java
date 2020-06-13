@@ -1,4 +1,4 @@
-package com.example.ver10.ui.gallery;
+package com.example.ver10.ui.area;
 
 import android.content.Intent;
 import android.os.Bundle;

@@ -1,16 +1,16 @@
-package com.example.ver10.ui.gallery;
+package com.example.ver10.ui.setting;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class AreaViewModel extends ViewModel {
+public class SettingViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public AreaViewModel() {
+    public SettingViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is area fragment");
+        mText.setValue("This is setting fragment");
     }
 
     public LiveData<String> getText() {

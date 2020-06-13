@@ -1,16 +1,15 @@
-package com.example.ver10.ui.slideshow;
+package com.example.ver10.ui.notify;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SettingViewModel extends ViewModel {
-
+public class NotifyViewModel extends ViewModel {
     private MutableLiveData<String> mText;
 
-    public SettingViewModel() {
+    public NotifyViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is setting fragment");
+        mText.setValue("This is notify fragment");
     }
 
     public LiveData<String> getText() {

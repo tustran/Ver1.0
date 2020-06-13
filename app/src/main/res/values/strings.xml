@@ -10,8 +10,9 @@
     <string name="menu_home">Trang chủ</string>
     <string name="menu_area">Khu vực</string>
     <string name="menu_setting">Cài đặt</string>
+    <string name="menu_notify">Thông báo</string>
 
     <string name="home_second">Home Second</string>
-    <string name="action_notification">Thông báo</string>
+
     <string name="menu_signout">Đăng xuất</string>
 </resources>

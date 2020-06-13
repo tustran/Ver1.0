@@ -1,4 +1,4 @@
-package com.example.ver10.ui.slideshow;
+package com.example.ver10.ui.setting;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
