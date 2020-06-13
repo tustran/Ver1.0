@@ -1,4 +1,4 @@
-package com.example.ver10.ui.gallery;
+package com.example.ver10.ui.area;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

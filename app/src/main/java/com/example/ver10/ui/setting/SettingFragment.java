@@ -1,4 +1,4 @@
-package com.example.ver10.ui.gallery;
+package com.example.ver10.ui.setting;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.ver10.R;
 
-public class AreaFragment extends Fragment {
+public class SettingFragment extends Fragment {
 
-    private AreaViewModel areaViewModel;
+    private SettingViewModel settingViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        areaViewModel =
-                ViewModelProviders.of(this).get(AreaViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_area, container, false);
-        final TextView textView = root.findViewById(R.id.text_area);
-        areaViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        settingViewModel =
+                ViewModelProviders.of(this).get(SettingViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_setting, container, false);
+        final TextView textView = root.findViewById(R.id.text_setting);
+        settingViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

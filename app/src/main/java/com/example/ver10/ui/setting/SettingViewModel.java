@@ -1,4 +1,4 @@
-package com.example.ver10.ui.slideshow;
+package com.example.ver10.ui.setting;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
