@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <TableLayout android:layout_height="match_parent"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--        <TableRow android:id="@+id/tableRow1"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_width="match_parent">-->
+
+    <Switch
+        android:id="@+id/switch_id"
+        android:text="Test Switch           "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+<!--    <TextView-->
+<!--        android:id="@+id/text_id"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <!--        </TableRow>-->
+    <!--    </TableLayout>-->
+</RelativeLayout>
