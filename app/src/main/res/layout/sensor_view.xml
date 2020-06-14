@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:orientation="horizontal"-->
+<!--    android:padding="20dp">-->
+<RelativeLayout android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="5dp"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <TableLayout android:layout_height="match_parent"-->
+<!--        android:layout_width="match_parent"-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android">-->
+<!--        <TableRow android:id="@+id/tableRow1"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent">-->
+            <TextView
+                android:id="@+id/idsensor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="left"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/sensortemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProductName"
+                android:gravity="center"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/sensormois"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProductName"
+                android:gravity="right"
+                android:textStyle="bold"
+                />
+<!--        </TableRow>-->
+<!--    </TableLayout>-->
+</RelativeLayout>
+<!--    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        tools:ignore="MissingConstraints" />-->
+<!--    android:padding="5dp"-->
+<!--    tools:ignore="MissingConstraints">-->
+<!--    <TextView-->
+<!--        android:id="@+id/idsensorhead"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Cảm biến"-->
+<!--        android:textStyle="bold"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sensortemphead"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Nhiệt độ"-->
+<!--        android:gravity="center"-->
+<!--        android:textStyle="bold"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/sensormoishead"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Độ ẩm"-->
+<!--        android:gravity="right"-->
+<!--        android:textStyle="bold"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:gravity="right"-->
+    <!--            android:text="1000"-->
+    <!--            tools:ignore="MissingConstraints" />-->
+
+<!--</LinearLayout>-->

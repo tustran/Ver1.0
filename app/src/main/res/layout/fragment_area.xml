@@ -1,170 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="wrap_content">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.area.AreaFragment">
+    android:orientation="vertical" >
 
-    <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+<!--        <TextView-->
+<!--            android:id="@+id/sensorheader"-->
+<!--            android:layout_width = "0dp"-->
+<!--            android:layout_height = "wrap_content"-->
+<!--            android:layout_weight = "1"-->
+<!--            android:gravity = "center"-->
+<!--            android:padding = "5dp"-->
+<!--            android:text = "Cảm biến"-->
+<!--            android:textColor = "#ffffff" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width = "0dp"-->
+<!--            android:layout_height = "wrap_content"-->
+<!--            android:layout_weight = "2"-->
+<!--            android:gravity = "center"-->
+<!--            android:padding = "5dp"-->
+<!--            android:text = "Nhiệt độ"-->
+<!--            android:textColor = "#ffffff" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width = "0dp"-->
+<!--            android:layout_height = "wrap_content"-->
+<!--            android:layout_weight = "1.5"-->
+<!--            android:gravity = "center"-->
+<!--            android:padding = "5dp"-->
+<!--            android:text = "Độ ẩm"-->
+<!--            android:textColor = "#ffffff" />-->
+
+<!--&lt;!&ndash;        <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width = "0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height = "wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_weight = "1"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:gravity = "center"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:padding = "5dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:text = "@string/price"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:textColor = "#ffffff" />&ndash;&gt;-->
+<!--    </LinearLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
-
-        <EditText
-            android:id="@+id/editText"
-            android:focusable="false"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+        android:paddingTop="5dp">
+        <!--    <TableLayout android:layout_height="match_parent"-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        xmlns:android="http://schemas.android.com/apk/res/android">-->
+        <!--        <TableRow android:id="@+id/tableRow1"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:layout_width="match_parent">-->
+        <TextView
+            android:id="@+id/idsensor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="Khu vườn" />
+            android:gravity="left"
+            android:text="Cảm biến"
+            android:textStyle="bold" />
 
-        <TableRow
-            android:id="@+id/tableRow1"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp" >
-
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:text="1" />
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="2" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="3" />
-
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow2"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp" >
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:text="4A" />
-
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="4B" />
-
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="5" />
-
-        </TableRow>
-        <EditText
-            android:id="@+id/editText2"
-            android:focusable="false"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+        <TextView
+            android:id="@+id/sensortemp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:text="Chuồn trại" />
+            android:gravity="center"
+            android:text="Nhiệt dộ"
+            android:textStyle="bold" />
 
-        <TableRow
-            android:id="@+id/tableRow7"
-            android:layout_width="fill_parent"
+        <TextView
+            android:id="@+id/sensormois"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="1dp" >
+            android:gravity="right"
+            android:text="Độ ẩm"
+            android:textStyle="bold" />
+        <!--        </TableRow>-->
+        <!--    </TableLayout>-->
+    </RelativeLayout>
 
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:text="1A" />
+    <ListView
+        android:id="@+id/listsensor"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+<!--        android:layout_below="@id/sensorheader"-->
 
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="1B" />
+    <ListView
+        android:id="@+id/listproduct"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
 
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="1C" />
+</LinearLayout>
 
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow11"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp" >
+<!--    <Button-->
+<!--        android:id="@+id/delete"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Xoá sản phẩm đầu tiên"-->
+<!--        tools:ignore="MissingConstraints" />-->
+<!--    <TextView-->
+<!--        android:id="@+id/text_area"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="20sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:gravity="center_horizontal" />-->
+<!--</RelativeLayout>-->
 
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:text="2A" />
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="2B" />
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="2C" />
-
-        </TableRow>
-        <TableRow
-            android:id="@+id/tableRow15"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="1dp" >
-
-            <Button
-                android:id="@+id/button16"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:text="3A" />
-
-            <Button
-                android:id="@+id/button17"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="3B" />
-
-            <Button
-                android:id="@+id/button18"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:text="3C" />
-
-        </TableRow>
-
-    </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
