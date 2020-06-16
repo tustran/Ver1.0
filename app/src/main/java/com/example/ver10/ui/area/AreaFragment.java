@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.CompoundButton;
 import android.widget.ListView;
+import android.widget.SeekBar;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -33,6 +34,11 @@ public class AreaFragment extends Fragment {
     ListView listViewProduct;
     ListView listViewSensor;
     ListView listViewMotor;
+
+    private SeekBar sBar;
+    private TextView tView;
+    private SeekBar sBar2;
+    private TextView tView2;
 //    Model phần tử dữ liệu hiện
     class Product {
         String name;
@@ -407,6 +413,43 @@ public class AreaFragment extends Fragment {
             }
         });
 
+
+        sBar = (SeekBar) root.findViewById(R.id.seekBar);
+        tView = (TextView) root.findViewById(R.id.textview1);
+        sBar2 = (SeekBar) root.findViewById(R.id.seekBar2);
+        tView2 = (TextView) root.findViewById(R.id.textview2);
+        tView.setText(sBar.getProgress() + "/" + sBar.getMax());
+        tView2.setText(sBar2.getProgress() + "%");
+        sBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int pval = 0;
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                pval = progress;
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                //write custom code to on start progress
+            }
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                tView.setText(pval + "oC / " + seekBar.getMax()+ "oC");
+            }
+        });
+        sBar2.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            int pval = 0;
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
+                pval = progress;
+            }
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                //write custom code to on start progress
+            }
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                tView2.setText(pval + "%" );
+            }
+        });
 
         return root;
     }

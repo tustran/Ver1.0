@@ -5,11 +5,97 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:nestedScrollingEnabled="true"
     android:fillViewport="true">
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <Switch
+            android:id="@+id/switch2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Tự động điều khiển"
+            android:textSize="21dp" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:focusable="false"
+            android:text="Nhiệt độ" />
+
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:max="100"
+            android:min="0" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar1"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:layout_marginLeft="130dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:focusable="false"
+            android:text="Độ ẩm" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:max="100"
+            android:min="0" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar1"
+            android:layout_alignLeft="@+id/seekBar1"
+            android:layout_marginLeft="130dp"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
 
@@ -91,7 +177,7 @@
     <ListView
         android:id="@+id/listsensor"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="210dp"
         android:layout_weight="1" />
 <!--        android:layout_below="@id/sensorheader"-->
 
@@ -132,10 +218,11 @@
         <!--        </TableRow>-->
         <!--    </TableLayout>-->
     </RelativeLayout>
+
     <ListView
         android:id="@+id/listmotor"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="87dp"
         android:layout_weight="1" />
 
     <ListView
