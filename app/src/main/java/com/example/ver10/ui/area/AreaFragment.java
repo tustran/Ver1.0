@@ -312,9 +312,9 @@ public class AreaFragment extends Fragment {
 //        setContentView(R.layout.activity_main);
 
 //        Khoi tao ListProduct
-        listProduct = new ArrayList<>();
-        listProduct.add(new Product(1, "Iphone 6", 500));
-        listProduct.add(new Product(2, "Iphone 7", 700));
+//        listProduct = new ArrayList<>();
+//        listProduct.add(new Product(1, "Iphone 6", 500));
+//        listProduct.add(new Product(2, "Iphone 7", 700));
 //        listProduct.add(new Product(3, "Sony Abc", 800));
 //        listProduct.add(new Product(4, "Samsung XYZ", 900));
 //        listProduct.add(new Product(5, "SP 5", 500));
@@ -322,21 +322,21 @@ public class AreaFragment extends Fragment {
 //        listProduct.add(new Product(7, "SP 7", 800));
 //        listProduct.add(new Product(8, "SP 8", 900));
 
-        productListViewAdapter = new ProductListViewAdapter(listProduct);
-
-        listViewProduct = root.findViewById(R.id.listproduct);
-        listViewProduct.setAdapter(productListViewAdapter);
+//        productListViewAdapter = new ProductListViewAdapter(listProduct);
+//
+//        listViewProduct = root.findViewById(R.id.listproduct);
+//        listViewProduct.setAdapter(productListViewAdapter);
 
 
         //Lắng nghe bắt sự kiện một phần tử danh sách được chọn
-        listViewProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Product product = (Product) productListViewAdapter.getItem(position);
-                //Làm gì đó khi chọn sản phẩm (ví dụ tạo một Activity hiện thị chi tiết, biên tập ..)
-                Toast.makeText(AreaFragment.super.getContext(), product.name, Toast.LENGTH_LONG).show();
-            }
-        });
+//        listViewProduct.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                Product product = (Product) productListViewAdapter.getItem(position);
+//                //Làm gì đó khi chọn sản phẩm (ví dụ tạo một Activity hiện thị chi tiết, biên tập ..)
+//                Toast.makeText(AreaFragment.super.getContext(), product.name, Toast.LENGTH_LONG).show();
+//            }
+//        });
 
         //Khoi tao ListProduct
         listSensor = new ArrayList<>();
